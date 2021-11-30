@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2872087505377978" />
-        <entry key="app/src/main/res/layout/recy_item.xml" value="0.41580417445035917" />
+        <entry key="app/src/main/res/layout/activity_receipt_details.xml" value="0.376359750502979" />
+        <entry key="app/src/main/res/layout/recy_item.xml" value="0.36522578919438814" />
       </map>
     </option>
   </component>

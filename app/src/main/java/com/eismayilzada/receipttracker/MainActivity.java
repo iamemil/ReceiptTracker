@@ -13,8 +13,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import com.google.gson.Gson;
-import org.json.JSONArray;
+import android.widget.Toast;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
     private RequestQueue queue;
     private final String sharedPrefFileName = "com.eismayilzada.receipttracker.sharedprefs.pref";
     private static SharedPreferences sharedPreferences;
-private SharedPrefManager sharedPrefManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +65,8 @@ private SharedPrefManager sharedPrefManager;
             System.out.println("Receipt ID "+receiptIdText);
             addReceipt(receiptIdText);
             receiptText.setText("");
+        }else{
+            Toast.makeText(view.getContext(), "Receipt ID can't be empty", Toast.LENGTH_SHORT).show();
         }
     }
     @SuppressLint("NotifyDataSetChanged")

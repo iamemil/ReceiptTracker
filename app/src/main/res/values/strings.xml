@@ -4,4 +4,6 @@
     <string name="receiptId">Receipt ID</string>
     <string name="add">Add</string>
     <string name="reset">Reset</string>
+    <string name="receipt_icon">Receipt Icon</string>
+    <string name="amount">Amount</string>
 </resources>
