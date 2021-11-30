@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Receipt Tracker</string>
+    <string name="storeName">Store Name</string>
+    <string name="receiptId">Receipt ID</string>
+    <string name="add">Add</string>
+    <string name="reset">Reset</string>
+</resources>
