@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSearchBtnClick(View view){
-        String receiptIdText = receiptText.getText().toString();
+        String receiptIdText = receiptText.getText().toString().trim();
         if(!receiptIdText.isEmpty()){
-            System.out.println("Receipt ID "+receiptIdText);
+            //System.out.println("Receipt ID "+receiptIdText);
             addReceipt(receiptIdText);
             receiptText.setText("");
         }else{
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     void addReceipt(String receiptId){
         queue = Volley.newRequestQueue(MainActivity.this);
         String url = "https://monitoring.e-kassa.gov.az/pks-portal/1.0.0/documents/" + receiptId;
-        System.out.println(url);
+        //System.out.println(url);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url,
                 null, new Response.Listener<JSONObject>() {
             @SuppressLint("NotifyDataSetChanged")
